@@ -21,12 +21,9 @@ public class Thread1 extends Thread {
         String path = Paths.get(".").toAbsolutePath().normalize().toString();
         File file = new File(path); //System.getProperty("user.dir")
 
-        FilenameFilter filter = new FilenameFilter() {
-            @Override
-            public boolean accept(File file, String name) {
-                // находим только файлы .in "File1.in" "File2.in" "File3.in"
-                return name.endsWith(".in");
-            }
+        FilenameFilter filter = (file1, name) -> {
+            // находим только файлы .in "File1.in" "File2.in" "File3.in"
+            return name.endsWith(".in");
         };
 
         File[] files = file.listFiles(filter);
