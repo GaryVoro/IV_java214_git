@@ -1,5 +1,5 @@
 package multithreadingGV.HW01_23_2023;
-
+//
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         System.out.println(Thread.currentThread().getName());
@@ -8,7 +8,7 @@ public class Main {
         //String linePathAndWord = scanner.nextLine();
         //String[] strPathAndWord = linePathAndWord.split(" ");
 
-        Thread1 myThread1 = new Thread1("флот");
+        Thread1 myThread1 = new Thread1("флот");//поиск слова "флот" в тексте файла
         Thread2 myThread2 = new Thread2();
 
         myThread1.start();
