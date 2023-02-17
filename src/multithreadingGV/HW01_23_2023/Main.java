@@ -8,7 +8,7 @@ public class Main {
         //String linePathAndWord = scanner.nextLine();
         //String[] strPathAndWord = linePathAndWord.split(" ");
 
-        Thread1 myThread1 = new Thread1("флот");
+        Thread1 myThread1 = new Thread1("флот"); //слово для поиска в файле
         Thread2 myThread2 = new Thread2();
 
         myThread1.start();
