@@ -2,32 +2,14 @@ package PatternHW;
 
 public class MyCar implements MyCarInfo {
 
-    String nameCar; //названии автомобиля, год выпуска, цена, цвет, объем двигателя.
-    String colorCar;
-    Integer madeYearCar;
-    Integer vEngine;
-    Integer priceCar;
-    Integer speedCarKMH;
-    Integer speedCarMile;
+    String nameCar; //название автомобиля
+    float speedCarKMH;
 
 
-
-    public MyCar(String name, String color, int made, int engine, int price) {
+    public MyCar(String name, float speed) {
         this.nameCar = name;
-        this.colorCar = color;
-        this.madeYearCar = made;
-        this.vEngine = engine;
-        this.priceCar = price;
+        this.speedCarKMH = speed;
     }
-
-    public void viewCar(String pos){
-
-
-    }
-
-
     @Override
-    public int getSpeedKMH() {
-        return 0;
-    }
+    public float getSpeedKMH() { return speedCarKMH; }
 }
