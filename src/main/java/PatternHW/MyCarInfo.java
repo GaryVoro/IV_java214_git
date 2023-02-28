@@ -1,5 +1,5 @@
 package PatternHW;
 
 public interface MyCarInfo {
-    int getSpeedKMH();
+    float getSpeedKMH();
 }
