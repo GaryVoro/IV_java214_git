@@ -1,8 +1,8 @@
 package Pattern.BridgeHW22_02_2023;
 
 public abstract class Transport {
-        public final Factory factoryPtroduce;
-        public final Factory factoryAssemble;
+        public final Factory factoryPtroduce;//производство комплектующих
+        public final Factory factoryAssemble;//сборка ТС
 
         protected Transport(Factory w1, Factory w2)
         {
