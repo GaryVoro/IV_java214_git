@@ -1,4 +1,4 @@
---
+-- Копия БД Academy
 -- PostgreSQL database dump
 --
 
