@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My to do List</title>
+    <style>
+    /* Включение отступа и границы в общую ширину и высоту элемента */
+    * {
+      box-sizing: border-box;
+    }
+
+    .container{
+        margin: 0 auto;
+        max-width: 50%;
+        background-color:#e2e2e2;
+        justify-content: center;
+        display: block;
+        }
+
+    /* Стиль заголовка */
+    .header {
+      background-color: #e2e2e2;
+      padding: 20px 150px 0;
+      color: black;
+      text-align: left;
+    }
+
+    h2 {
+        margin-top: 0px;
+    }
+
+    ul {
+        width: 100%;
+        padding: 0 150px 20px;
+        list-style-type: none;
+    }
+    li {
+        padding: 10px 10px 10px 14px;
+    }
+
+    /* Стиль элементов списка */
+
+    ul li {
+      cursor: pointer;
+      padding: 12px 8px 12px 40px;
+      background: #6C9DC2;
+      font-size: 18px;
+      transition: 0.2s;
+    }
+
+    /* Установить все нечетные элементы списка в другой цвет (зебра) */
+    ul li:nth-child(odd) {
+        background-color: #a5ccda;
+    }
+
+    /* Более темный фон-цвет при наведении */
+    ul li:hover {
+      background: #4792AD;
+    }
+
+    ul li::after {
+        content: '\2A2F';    /*cross*/
+        padding-left: 40px;
+        color: #8c1100;
+        padding-: 4px; /* выравнивание относительно текста по гориз. */
+        top: -2px; /* выравнивание относительно текста по верт. */
+    }
+
+
+    ul li::before {
+        content: url(icons/unchecked_16.png);
+        padding: 1px 20px 1px 28px;
+    }
+
+    ul li.completed::before {
+        content: url(icons/checked_16.png);
+    }
+
+    ul li.color_end {
+        background-color: #e2e2e2;
+
+    del {
+        text-decoration: line-through;
+    }
+	</style>
+</head>
+
+<body>
+<div class='container'>
+    <div class='header'>
+        <h2>My To Do List</h2>
+    </div>
+
+    <ul>
+        <li>Hit the gym</li>
+        <li class='completed color_end'><del>Pay bills www</del> </li>
+        <li>Meet John</li>
+        <li>Buy eggs</li>
+        <li class='completed color_end'><del>Read a book</del> </li>
+        <li>Organize office</li>
+        <li>Eat dinner</li>
+        <li>Buy apples</li>
+        <li>Meet George</li>
+        <li>Feed the cat</li>
+        <li class='completed color_end'><del>Write a letter</del></li>
+        <li>Run 1 km</li>
+    </ul>
+</div>
+</body>
+</html>
